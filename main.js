@@ -60,3 +60,7 @@ function generateBookCard(bookObj)
     return bookCard;
 }
 
+function clearBookSection(){
+    booklist.innerHTML='';
+}
+
