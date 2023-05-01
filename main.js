@@ -64,3 +64,10 @@ function clearBookSection(){
     booklist.innerHTML='';
 }
 
+function displayBookSection(bookArray){
+    for(let i=o; i<bookArray.length; i+=1)
+    {
+        const bookCard=generateBookCard(bookArray[i]);
+        booklist.appendChild(bookCard);
+    }
+}
