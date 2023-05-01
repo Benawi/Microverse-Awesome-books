@@ -116,5 +116,6 @@ form.addEventListener("submit", (event) => {
   }
 
   setStorage();
+  clearBookSection();
   event.preventDefault();
 });
