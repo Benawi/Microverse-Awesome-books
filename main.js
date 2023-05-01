@@ -110,3 +110,11 @@ document.addEventListener("click", (event) => {
   }
 });
 
+form.addEventListener("submit", (event) => {
+  if (addBook) {
+    BOOKS_DATA.push(addBook());
+  }
+
+  setStorage();
+  event.preventDefault();
+});
