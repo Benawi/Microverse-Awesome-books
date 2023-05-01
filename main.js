@@ -71,3 +71,7 @@ function displayBookSection(bookArray){
         booklist.appendChild(bookCard);
     }
 }
+
+displayBookSection(BOOKS_DATA);
+updateSelections();
+
