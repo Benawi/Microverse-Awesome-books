@@ -69,14 +69,10 @@ function generateBookCard(bookObj) {
   bookTitle.classList.add("book-card-text");
   bookAuthor.classList.add("book-card-text");
   removeBtn.classList.add("remove-book", "mb-05");
-
   let { title, author } = bookObj;
   bookTitle.textContent = title;
   bookAuthor.textContent = author;
 
-  localStorage.clear();
-  /*   bookTitle.textContent = bookObj.title;
-  bookAuthor.textContent = bookObj.author; */
   removeBtn.textContent = "Remove";
 
   bookCard.appendChild(bookTitle);
@@ -119,5 +115,5 @@ form.addEventListener("submit", (event) => {
   clearBookSection();
   displayBookSection(BOOKS_DATA);
   updateSelections();
-  event.preventDefault();
+  //event.preventDefault();
 });
