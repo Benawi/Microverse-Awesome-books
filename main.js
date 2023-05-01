@@ -117,5 +117,6 @@ form.addEventListener("submit", (event) => {
 
   setStorage();
   clearBookSection();
+  displayBookSection(BOOKS_DATA);
   event.preventDefault();
 });
