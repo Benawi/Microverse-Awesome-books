@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 Capstone Microverse! Project <a name="about-project"></a>
+# 📖 Awesome Books Microverse! Project <a name="about-project"></a>
 
 Awesome Books Microverse! project is a repository consisting of the following files:
 - HTML file 
@@ -49,7 +49,7 @@ The repository also contains files for setting up linters and validators.
 
 
 ### Key Features <a name="key-features"></a>
-## Capstone - [HTML/CSS & JavaScript capstone project](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md)
+## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md)
 ### Features Added:
 - Create a collection that keeps a list of books 
 - Create a function to add a new book to the collection, with title and author
@@ -150,7 +150,7 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-For the second milestone in building this portfolio website, it will create the mobile website section where you will list your portfolio projects.
+For the second Time booked for implementing suggested project changes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
