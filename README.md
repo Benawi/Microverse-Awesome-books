@@ -169,8 +169,6 @@ Give me ⭐️ If you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank Microverse program for providing me this great chance.
-- Again I would like to thank[Cindy Shin](https://www.behance.net/adagio07) the author of [the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), as required by the [Creative Commons License](https://creativecommons.org/licenses/) and for project requirements
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
