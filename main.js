@@ -1,10 +1,16 @@
-/* function setStorage(){
-    localStorage.setItem('books_data',JSON.stringify(BOOKS_DATA));
-} */
-/* function retrieveStorage(){
-    BOOKS_DATA=JSON.parse(localStorage.getItem('books_data'));
-} */
-const BOOKS_DATA = JSON.parse(localStorage.getItem("books_data")) || [];
+let BOOKS_DATA = [];
+function setStorage() {
+  localStorage.setItem("books_data", JSON.stringify(BOOKS_DATA));
+}
+function retrieveStorage() {
+  BOOKS_DATA = JSON.parse(localStorage.getItem("books_data"));
+}
+// let BOOKS_DATA = JSON.parse(localStorage.getItem("books_data")) || [];
+if (!localStorage.getItem("books_data")) {
+  setStorage();
+} else {
+  retrieveStorage();
+}
 
 let form = document.querySelector("form");
 let booklist = document.getElementById("book-list");
@@ -37,41 +43,70 @@ function addBook() {
   return null;
 }
 
-function generateBookCard(bookObj)
-{
-    const bookCard=document.createElement('li');
-    const bookTitle=document.createElement('p');
-    const bookAuthor=document.createElement('p')
-    const removeBtn=document.createElement('button');
+function removeBook(element) {
+  const textElements =
+    element.parentElement.querySelectorAll(".book-card-text");
 
-    bookCard.classList.add('book-card','mb-1');
-    bookTitle.classList.add('book-card-text');
-    bookAuthor.classList.add('book-card-text');
-    removeBtn.classList.add('remove-book','mb-05')
-
-    const { title, author } = bookObj;
-    bookTitle.textContent=title;
-    bookAuthor.textContent=author;
-    removeBtn.textContent='Remove'
-
-    bookCard.appendChild(bookTitle);
-    bookCard.appendChild(bookAuthor);
-    bookCard.appendChild(removeBtn);
-    return bookCard;
-}
-
-function clearBookSection(){
-    booklist.innerHTML='';
-}
-
-function displayBookSection(bookArray){
-    for(let i=o; i<bookArray.length; i+=1)
-    {
-        const bookCard=generateBookCard(bookArray[i]);
-        booklist.appendChild(bookCard);
+  BOOKS_DATA = BOOKS_DATA.filter((obj) => {
+    if (
+      textElements[0].innerText === obj.title &&
+      textElements[1].innerText === obj.author
+    ) {
+      return false;
     }
+
+    return true;
+  });
+}
+
+function generateBookCard(bookObj) {
+  const bookCard = document.createElement("li");
+  const bookTitle = document.createElement("p");
+  const bookAuthor = document.createElement("p");
+  const removeBtn = document.createElement("button");
+
+  bookCard.classList.add("book-card", "mb-1");
+  bookTitle.classList.add("book-card-text");
+  bookAuthor.classList.add("book-card-text");
+  removeBtn.classList.add("remove-book", "mb-05");
+
+  let { title, author } = bookObj;
+  bookTitle.textContent = title;
+  bookAuthor.textContent = author;
+
+  localStorage.clear();
+  /*   bookTitle.textContent = bookObj.title;
+  bookAuthor.textContent = bookObj.author; */
+  removeBtn.textContent = "Remove";
+
+  bookCard.appendChild(bookTitle);
+  bookCard.appendChild(bookAuthor);
+  bookCard.appendChild(removeBtn);
+  return bookCard;
+}
+
+function clearBookSection() {
+  booklist.innerHTML = "";
+}
+
+function displayBookSection(bookArray) {
+  for (let i = 0; i < bookArray.length; i += 1) {
+    const bookCard = generateBookCard(bookArray[i]);
+    booklist.appendChild(bookCard);
+  }
 }
 
 displayBookSection(BOOKS_DATA);
 updateSelections();
+
+document.addEventListener("click", (event) => {
+  if (event.target && event.target.className === "remove-book mb-05") {
+    removeBook(event.target);
+
+    setStorage();
+    clearBookSection();
+    displayBookSection(BOOKS_DATA);
+    updateSelections();
+  }
+});
 
