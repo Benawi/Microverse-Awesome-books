@@ -27,3 +27,8 @@
 .d-justify-center {
   justify-content: center;
 }
+
+.book-card {
+  list-style: none;
+  border-bottom: 1px solid black;
+}
