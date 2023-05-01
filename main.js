@@ -1,36 +1,36 @@
 let BOOKS_DATA = [];
 function setStorage() {
-  localStorage.setItem("books_data", JSON.stringify(BOOKS_DATA));
+  localStorage.setItem('books_data', JSON.stringify(BOOKS_DATA));
 }
 function retrieveStorage() {
-  BOOKS_DATA = JSON.parse(localStorage.getItem("books_data"));
+  BOOKS_DATA = JSON.parse(localStorage.getItem('books_data'));
 }
 // let BOOKS_DATA = JSON.parse(localStorage.getItem("books_data")) || [];
-if (!localStorage.getItem("books_data")) {
+if (!localStorage.getItem('books_data')) {
   setStorage();
 } else {
   retrieveStorage();
 }
 
-let form = document.querySelector("form");
-let booklist = document.getElementById("book-list");
+let form = document.querySelector('form');
+let booklist = document.getElementById('book-list');
 
 function updateSelections() {
-  form = document.querySelector("form");
-  booklist = document.getElementById("book-list");
+  form = document.querySelector('form');
+  booklist = document.getElementById('book-list');
 }
 
 function addBook() {
-  const bookTitle = document.getElementById("book-title");
-  const bookAuthor = document.getElementById("book-author");
+  const bookTitle = document.getElementById('book-title');
+  const bookAuthor = document.getElementById('book-author');
   const bookObj = {};
 
   let exists = false;
 
   for (let i = 0; i < BOOKS_DATA.length; i += 1) {
     if (
-      BOOKS_DATA[i].title === bookTitle.value &&
-      BOOKS_DATA[i].author === bookAuthor.value
+      BOOKS_DATA[i].title === bookTitle.value
+      && BOOKS_DATA[i].author === bookAuthor.value
     ) {
       exists = true;
     }
@@ -44,13 +44,12 @@ function addBook() {
 }
 
 function removeBook(element) {
-  const textElements =
-    element.parentElement.querySelectorAll(".book-card-text");
+  const textElements = element.parentElement.querySelectorAll('.book-card-text');
 
   BOOKS_DATA = BOOKS_DATA.filter((obj) => {
     if (
-      textElements[0].innerText === obj.title &&
-      textElements[1].innerText === obj.author
+      textElements[0].innerText === obj.title
+      && textElements[1].innerText === obj.author
     ) {
       return false;
     }
@@ -60,20 +59,20 @@ function removeBook(element) {
 }
 
 function generateBookCard(bookObj) {
-  const bookCard = document.createElement("li");
-  const bookTitle = document.createElement("p");
-  const bookAuthor = document.createElement("p");
-  const removeBtn = document.createElement("button");
+  const bookCard = document.createElement('li');
+  const bookTitle = document.createElement('p');
+  const bookAuthor = document.createElement('p');
+  const removeBtn = document.createElement('button');
 
-  bookCard.classList.add("book-card", "mb-1");
-  bookTitle.classList.add("book-card-text");
-  bookAuthor.classList.add("book-card-text");
-  removeBtn.classList.add("remove-book", "mb-05");
-  let { title, author } = bookObj;
+  bookCard.classList.add('book-card', 'mb-1');
+  bookTitle.classList.add('book-card-text');
+  bookAuthor.classList.add('book-card-text');
+  removeBtn.classList.add('remove-book', 'mb-05');
+  const { title, author } = bookObj;
   bookTitle.textContent = title;
   bookAuthor.textContent = author;
 
-  removeBtn.textContent = "Remove";
+  removeBtn.textContent = 'Remove';
 
   bookCard.appendChild(bookTitle);
   bookCard.appendChild(bookAuthor);
@@ -82,7 +81,7 @@ function generateBookCard(bookObj) {
 }
 
 function clearBookSection() {
-  booklist.innerHTML = "";
+  booklist.innerHTML = '';
 }
 
 function displayBookSection(bookArray) {
@@ -95,8 +94,8 @@ function displayBookSection(bookArray) {
 displayBookSection(BOOKS_DATA);
 updateSelections();
 
-document.addEventListener("click", (event) => {
-  if (event.target && event.target.className === "remove-book mb-05") {
+document.addEventListener('click', (event) => {
+  if (event.target && event.target.className === 'remove-book mb-05') {
     removeBook(event.target);
 
     setStorage();
@@ -106,7 +105,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', () => {
   if (addBook) {
     BOOKS_DATA.push(addBook());
   }
@@ -115,5 +114,4 @@ form.addEventListener("submit", (event) => {
   clearBookSection();
   displayBookSection(BOOKS_DATA);
   updateSelections();
-  //event.preventDefault();
 });
