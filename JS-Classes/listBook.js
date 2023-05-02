@@ -30,4 +30,8 @@ export default class ListBooks {
     bookCard.appendChild(removeBtn);
     return bookCard;
   }
+
+  clearBookSection() {
+    booklist.innerHTML = '';
+  }
 }
