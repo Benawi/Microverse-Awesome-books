@@ -1,8 +1,14 @@
 export default class BookClass{
     constructor(){
-        this.BOOK_DATA=JSON.parse(localStorage.getItem('book_data')) || [];
+        this.BOOKS_DATA=JSON.parse(localStorage.getItem('book_data')) || [];
     }
-   
+    setStorage(){
+        localStorage.setItem('book_data',JSON.stringify(this.BOOKS_DATA));
+        
+    }
+    list(){
+        return this.BOOK_DATA;
+    }
 
    
 }
