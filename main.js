@@ -6,7 +6,7 @@ const listBooks = new ListBooks();
 const form = document.querySelector('form');
 
 document.addEventListener('click', (event) => {
-  if (event.target && event.target.className === 'remove-book mb-05') {
+  if (event.target && event.target.className.includes('remove-book')) {
     adderRemovebooks.removeBook(event.target);
     listBooks.generate(adderRemovebooks.list());
   }
