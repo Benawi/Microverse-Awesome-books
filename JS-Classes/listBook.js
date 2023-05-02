@@ -34,4 +34,16 @@ export default class ListBooks {
   clearBookSection() {
     booklist.innerHTML = '';
   }
+
+  displayBookSection(bookArray) {
+    for (let i = 0; i < bookArray.length; i += 1) {
+      const bookCard = generateBookCard(bookArray[i]);
+      booklist.appendChild(bookCard);
+    }
+  }
+  generate(bookArray) {
+    this.clearBooksSection();
+    this.displayBooksSection(bookArray);
+    this.updateSelections();
+  }
 }
