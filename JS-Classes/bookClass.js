@@ -33,5 +33,19 @@ export default class BookClass {
    this.setStorage();
   }
 
+  removeBook(element) {
+    const textElements = element.parentElement.querySelectorAll('.book-card-text');
   
+    BOOKS_DATA = BOOKS_DATA.filter((obj) => {
+      if (
+        textElements[0].innerText === obj.title
+        && textElements[1].innerText === obj.author
+      ) {
+        return false;
+      }
+  
+      return true;
+    });
+    this.setStorage();
+  }
 }
