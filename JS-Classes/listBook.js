@@ -14,17 +14,21 @@ export default class ListBooks {
     this.bookTitle = document.createElement('p');
     this.bookAuthor = document.createElement('p');
     this.removeBtn = document.createElement('button');
+    this.sperator = document.createElement('span');
 
-    this.bookCard.classList.add('book-card', 'mb-1');
-    this.bookTitle.classList.add('book-card-text');
-    this.bookAuthor.classList.add('book-card-text');
-    this.removeBtn.classList.add('remove-book', 'mb-05');
-
-    this.bookTitle.textContent = bookObj.title;
+    this.bookCard.classList.add('book-card', 'd-flex', 'align-items-center', 'p-1');
+    this.bookTitle.classList.add('book-card-text', 'mb-0');
+    this.bookAuthor.classList.add('book-card-text', 'mb-0', 'me-5');
+    this.sperator.classList.add('mx-1');
+    this.removeBtn.classList.add('remove-book', 'ms-auto', 'bg-white', 'border', 'border-2', 'border-dark', 'px-1');
+    const title = `"${bookObj.title}"`;
+    this.bookTitle.textContent = title;
     this.bookAuthor.textContent = bookObj.author;
+    this.sperator.textContent = 'by';
     this.removeBtn.textContent = 'Remove';
 
     this.bookCard.appendChild(this.bookTitle);
+    this.bookCard.appendChild(this.sperator);
     this.bookCard.appendChild(this.bookAuthor);
     this.bookCard.appendChild(this.removeBtn);
     return this.bookCard;
