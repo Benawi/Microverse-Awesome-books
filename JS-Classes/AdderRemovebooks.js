@@ -41,7 +41,7 @@ export default class AdderRemovebooks {
     const textElements = element.parentElement.querySelectorAll('.book-card-text');
 
     this.BOOKS_DATA = this.BOOKS_DATA.filter((obj) => {
-      if (textElements[0].innerText === obj.title && textElements[1].innerText === obj.author) {
+      if (textElements[0].innerText === `"${obj.title}"` && textElements[1].innerText === obj.author) {
         return false;
       }
 
