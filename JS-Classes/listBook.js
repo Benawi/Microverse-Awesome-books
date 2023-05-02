@@ -1,46 +1,46 @@
 export default class ListBooks {
   constructor() {
-    this.form = document.querySelector("form");
-    this.bookList = document.getElementById("book-list");
+    this.form = document.querySelector('form');
+    this.bookList = document.getElementById('book-list');
   }
 
   updateSelections() {
-    form = document.querySelector("form");
-    booklist = document.getElementById("book-list");
+    this.form = document.querySelector('form');
+    this.bookList = document.getElementById('book-list');
   }
 
   generateBookCard(bookObj) {
-    const bookCard = document.createElement("li");
-    const bookTitle = document.createElement("p");
-    const bookAuthor = document.createElement("p");
-    const removeBtn = document.createElement("button");
+    this.bookCard = document.createElement('li');
+    this.bookTitle = document.createElement('p');
+    this.bookAuthor = document.createElement('p');
+    this.removeBtn = document.createElement('button');
 
-    bookCard.classList.add("book-card", "mb-1");
-    bookTitle.classList.add("book-card-text");
-    bookAuthor.classList.add("book-card-text");
-    removeBtn.classList.add("remove-book", "mb-05");
-    const { title, author } = bookObj;
-    bookTitle.textContent = title;
-    bookAuthor.textContent = author;
+    this.bookCard.classList.add('book-card', 'mb-1');
+    this.bookTitle.classList.add('book-card-text');
+    this.bookAuthor.classList.add('book-card-text');
+    this.removeBtn.classList.add('remove-book', 'mb-05');
 
-    removeBtn.textContent = "Remove";
+    this.bookTitle.textContent = bookObj.title;
+    this.bookAuthor.textContent = bookObj.author;
+    this.removeBtn.textContent = 'Remove';
 
-    bookCard.appendChild(bookTitle);
-    bookCard.appendChild(bookAuthor);
-    bookCard.appendChild(removeBtn);
-    return bookCard;
+    this.bookCard.appendChild(this.bookTitle);
+    this.bookCard.appendChild(this.bookAuthor);
+    this.bookCard.appendChild(this.removeBtn);
+    return this.bookCard;
   }
 
-  clearBookSection() {
-    booklist.innerHTML = '';
+  clearBooksSection() {
+    this.bookList.innerHTML = '';
   }
 
-  displayBookSection(bookArray) {
+  displayBooksSection(bookArray) {
     for (let i = 0; i < bookArray.length; i += 1) {
-      const bookCard = generateBookCard(bookArray[i]);
-      booklist.appendChild(bookCard);
+      const bookCard = this.generateBookCard(bookArray[i]);
+      this.bookList.appendChild(bookCard);
     }
   }
+
   generate(bookArray) {
     this.clearBooksSection();
     this.displayBooksSection(bookArray);
