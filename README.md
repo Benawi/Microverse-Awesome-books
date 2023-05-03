@@ -49,7 +49,7 @@ The repository also contains files for setting up linters and validators.
 
 
 ### Key Features <a name="key-features"></a>
-## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md)
+## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md)
 ### Features Added:
 - Create a collection that keeps a list of books 
 - Create a function to add a new book to the collection, with title and author
