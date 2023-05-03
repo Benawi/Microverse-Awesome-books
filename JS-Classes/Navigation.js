@@ -39,5 +39,11 @@ export default class Navigation {
       }
     });
   }
+sectionShow(linkNav){
+    this.linkStyle(linkNav);
+    const sectionId='section-${linkNav.id.slice(4)}';
+    const section=document.getElementById(sectionId);
+    this.sectionChange(section);
+}
 
 }
