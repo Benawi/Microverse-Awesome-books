@@ -3,11 +3,12 @@ export default class Navigation {
     this.navigation = document.querySelector('nav');
   }
 
+  /* eslint-disable class-methods-use-this */
   linkStyle(link) {
     if (link.className.includes('links')) {
       link.setAttribute(
         'class',
-        'links text-decoration-none fs-6 fw-bold px-2'
+        'links text-decoration-none fs-6 fw-bold px-2',
       );
     } else {
       link.setAttribute('class', 'text-decoration-none fs-6 fw-bold px-1');
@@ -20,17 +21,18 @@ export default class Navigation {
           if (element.className.includes('links')) {
             element.setAttribute(
               'class',
-              'links text-decoration-none text-dark fs-6 fw-bold px-2'
+              'links text-decoration-none text-dark fs-6 fw-bold px-2',
             );
           } else {
             element.setAttribute(
               'class',
-              'text-decoration-none text-dark fs-6 fw-bold px-1'
+              'text-decoration-none text-dark fs-6 fw-bold px-1',
             );
           }
         }
       });
   }
+
   sectionChange(section) {
     section.classList.remove('d-none');
     section.parentElement.querySelectorAll('section').forEach((element) => {
@@ -39,11 +41,12 @@ export default class Navigation {
       }
     });
   }
-sectionShow(linkNav){
-  this.linkStyle(linkNav);
-  const sectionId = `section-${linkNav.id.slice(4)}`;
-  const section = document.getElementById(sectionId);
-  this.sectionChange(section);
-}
 
+  sectionShow(linkNav) {
+    this.linkStyle(linkNav);
+    const sectionId = `section-${linkNav.id.slice(4)}`;
+    const section = document.getElementById(sectionId);
+    this.sectionChange(section);
+  }
 }
+/* eslint-enable class-methods-use-this */
