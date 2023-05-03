@@ -142,8 +142,9 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Habtamu Alemayehu
+👤 Habtamu Alemayehu & Jubaer hossain maruf
 - GitHub: [@bena](https://github.com/Benawi)
+- GitHub:[jubaer919] (https://github.com/jubaer919)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -173,9 +174,6 @@ Give me ⭐️ If you like this project!
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
