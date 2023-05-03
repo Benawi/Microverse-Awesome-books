@@ -136,7 +136,7 @@ npx eslint ."
 
 ### Deployment
 
-You can deploy this project adding new lines of code to index.html and styles.css files.
+You can redeploy this project by adding new lines of code to source files.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
