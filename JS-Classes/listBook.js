@@ -15,6 +15,7 @@ export default class ListBooks {
     this.bookAuthor = document.createElement('p');
     this.removeBtn = document.createElement('button');
     this.sperator = document.createElement('span');
+    this.textContainer=document.createElement('div');
 
     this.bookCard.classList.add('book-card', 'd-flex', 'align-items-center', 'p-1');
     this.bookTitle.classList.add('book-card-text', 'mb-0');
@@ -38,16 +39,16 @@ export default class ListBooks {
     this.bookList.innerHTML = '';
   }
 
-  displayBooksSection(bookArray) {
+  displayBooksSection(bookArray,datetime) {
     for (let i = 0; i < bookArray.length; i += 1) {
       const bookCard = this.generateBookCard(bookArray[i]);
       this.bookList.appendChild(bookCard);
     }
   }
 
-  generate(bookArray) {
+  generate(bookArray,datetime) {
     this.clearBooksSection();
-    this.displayBooksSection(bookArray);
+    this.displayBooksSection(bookArray,datetime);
     this.updateSelections();
   }
 }
