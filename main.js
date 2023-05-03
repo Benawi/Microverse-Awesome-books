@@ -7,7 +7,7 @@ const listBooks = new ListBooks();
 const nav = new Navigation();
 //const datetime = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 const datetime = new Date();
-
+const options = { weekday: 'long', year: 'numeric', month: 'long' };
 const dateString = datetime.toLocaleDateString();
 const timeString = datetime.toLocaleTimeString();
 const dateTimeString = `${dateString} ${timeString}`;
