@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 Capstone Microverse! Project <a name="about-project"></a>
+# 📖 CapsAwesome Books Microverse! Project <a name="about-project"></a>
 
 Awesome Books Microverse! project is a repository consisting of the following files:
 - HTML file 
@@ -67,7 +67,7 @@ The repository also contains files for setting up linters and validators.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](#)
+- [Live Demo](https://benawi.github.io/Microverse-Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,16 +142,16 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Habtamu Alemayehu & Jubaer hossain maruf
+👤 Habtamu Alemayehu 
 - GitHub: [@bena](https://github.com/Benawi)
+👤 Jubaer hossain maruf
 - GitHub:[jubaer919] (https://github.com/jubaer919)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-For the second milestone in building this portfolio website, it will create the mobile website section where you will list your portfolio projects.
+Awesome books: a complete website with navigation[this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m4_full_website_v1_1.md) will be added.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
