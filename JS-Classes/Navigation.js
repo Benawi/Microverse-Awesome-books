@@ -31,5 +31,13 @@ export default class Navigation {
         }
       });
   }
-  
+  sectionChange(section) {
+    section.classList.remove("d-none");
+    section.parentElement.querySelectorAll("section").forEach((element) => {
+      if (element !== section && !element.className.includes("d-none")) {
+        element.classList.add("d-none");
+      }
+    });
+  }
+
 }
