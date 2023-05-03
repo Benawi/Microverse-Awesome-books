@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
+.book-list,
+form,
+.contact-info {
+  margin-top: 2rem;
+}
+
+h1,
+h2 {
+  font-size: 1.2rem;
+}
+
+.links {
+  border-right: 1px solid darkblue;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.text-container {
+  width: 60%;
+}
+
 /* List Section */
 .book-card {
   font-weight: 600;
