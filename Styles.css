@@ -4,39 +4,36 @@
   box-sizing: border-box;
 }
 
-.mb-05 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.d-column {
-  flex-direction: column;
-}
-
-.d-align-center {
-  align-items: center;
-}
-
-.d-justify-center {
-  justify-content: center;
-}
-
+/* List Section */
 .book-card {
-  list-style: none;
-  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+
+.book-card:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+.line {
+  width: 30%;
+  border-bottom: 2px solid black;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.add-book {
+  align-self: flex-end;
+}
+
+.remove-book,
+.add-book {
+  box-shadow: 2px 2px black;
 }
 
 @media only screen and (min-width: 992px) {
   main {
     width: 100%;
-    max-width: 992px;
     margin: 0 auto;
   }
 

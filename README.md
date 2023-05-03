@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 Awesome Books Microverse! Project <a name="about-project"></a>
+# 📖 Awesome  Books Microverse! Project <a name="about-project"></a>
 
 Awesome Books Microverse! project is a repository consisting of the following files:
 - HTML file 
@@ -49,7 +49,7 @@ The repository also contains files for setting up linters and validators.
 
 
 ### Key Features <a name="key-features"></a>
-## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md)
+## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md)
 ### Features Added:
 - Create a collection that keeps a list of books 
 - Create a function to add a new book to the collection, with title and author
@@ -62,12 +62,16 @@ The repository also contains files for setting up linters and validators.
   - The correct book is removed from the collection.
    - The correct book dissapears from the page.
 - Data is preserved in the browser's memory by using localStorage.
+- JavaScript classes used instead of objects and arrays.
+- Class methods created to add and remove books.
+- CSS styles Added to the application to make it match [this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/images/awesome_books_core_elements.png) wireframe.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](#)
+- [Live Demo](https://benawi.github.io/Microverse-Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,21 +140,22 @@ npx eslint ."
 
 ### Deployment
 
-You can deploy this project adding new lines of code to index.html and styles.css files.
+You can redeploy this project by adding new lines of code to source files.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Habtamu Alemayehu
+👤 Habtamu Alemayehu 
 - GitHub: [@bena](https://github.com/Benawi)
-
+👤 Jubaer hossain maruf
+- GitHub:[jubaer919] (https://github.com/jubaer919)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-For the second Time booked for implementing suggested project changes
+Awesome books: a complete website with navigation[this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m4_full_website_v1_1.md) will be added.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,9 +176,6 @@ Give me ⭐️ If you like this project!
 - I would like to thank Microverse program for providing me this great chance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

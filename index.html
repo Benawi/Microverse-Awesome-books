@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./Styles.css">
     <title>Microverse Awesome Books</title>
 </head>
 
 <body>
-    <main class="d-flex d-justify-center">
-        <div class="d-flex d-column">
-            <h1 class="mb-1">Awesome Books</h1>
-            <section>
-                <ul id="book-list"></ul>
-            </section>
-            <section>
-                <form class="d-flex d-column">
-                    <input class="mb-1" type="text" name="title" id="book-title" placeholder="Title" />
-                    <input class="mb-1" type="text" name="author" id="book-author" placeholder="Author" />
-                    <button type="submit" id="add-book"> Add</button>
+    <main class="d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center">
+          <section class="d-flex flex-column align-items-center mb-3">
+            <h1 class="mb-2 fs-3">All awesome Books</h1>
+            <ul id="book-list" class="list-unstyled border border-2 border-dark w-100">
+            </ul>
+            <span class="line"></span>
+          </section>
+          <section class="d-flex flex-column align-items-center w-75">
+            <h2 class="mb-2 fs-3 text-center">Add a new book</h2>
+            <form class="d-flex flex-column">
+                    <input   class="input mb-1 border border-2 border-dark px-1"type="text" name="title" id="book-title" placeholder="Title" />
+                    <input   class="input mb-1 border border-2 border-dark px-1" type="text" name="author" id="book-author" placeholder="Author" />
+                    <button type="submit" id="add-book" class="add-book bg-white border border-2 border-dark px-1" > Add</button>
                 </form>
             </section>
         </div>
     </main>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>
