@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 CapsAwesome Books Microverse! Project <a name="about-project"></a>
+# 📖 Awesome  Books Microverse! Project <a name="about-project"></a>
 
 Awesome Books Microverse! project is a repository consisting of the following files:
 - HTML file 
@@ -49,7 +49,7 @@ The repository also contains files for setting up linters and validators.
 
 
 ### Key Features <a name="key-features"></a>
-## Capstone - [HTML/CSS & JavaScript capstone project](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md)
+## Awesome Books - [HTML/CSS & JavaScript Awesome Books project](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md)
 ### Features Added:
 - Create a collection that keeps a list of books 
 - Create a function to add a new book to the collection, with title and author
@@ -170,8 +170,6 @@ Give me ⭐️ If you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank Microverse program for providing me this great chance.
-- Again I would like to thank[Cindy Shin](https://www.behance.net/adagio07) the author of [the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), as required by the [Creative Commons License](https://creativecommons.org/licenses/) and for project requirements
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
