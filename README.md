@@ -62,6 +62,10 @@ The repository also contains files for setting up linters and validators.
   - The correct book is removed from the collection.
    - The correct book dissapears from the page.
 - Data is preserved in the browser's memory by using localStorage.
+- JavaScript classes used instead of objects and arrays.
+- Class methods created to add and remove books.
+- CSS styles Added to the application to make it match [this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/images/awesome_books_core_elements.png) wireframe.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
