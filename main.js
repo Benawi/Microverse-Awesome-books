@@ -5,7 +5,6 @@ import Navigation from './JS-Classes/Navigation.js';
 const adderRemovebooks = new AdderRemovebooks();
 const listBooks = new ListBooks();
 const nav = new Navigation();
-// const datetime = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 const datetime = new Date();
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
