@@ -8,27 +8,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./Styles.css">
     <title>Microverse Awesome Books</title>
+    <link rel="icon" type="image/png" href="./Book-icon.png"/>
 </head>
 
-<body>
+<body class="d-flex flex-column py-2 px-3">
+    <section class="d-flex flex-column align-items-end">
+        <nav class="d-flex justify-content-between border border-2 border-dark p-1 w-100">
+          <a id="nav-home" href="#" class="text-decoration-none text-dark fw-bold fs-6">Awesome Books</a>
+          <ul class="d-flex list-unstyled m-0 align-items-center">
+            <li><a id="nav-list" class="links text-decoration-none text-dark fs-6 fw-bold px-2" href="#">List</a></li>
+            <li><a id="nav-add" class="links text-decoration-none text-dark fs-6 fw-bold px-2" href="#">Add new</a></li>
+            <li><a id="nav-contact" class="text-decoration-none text-dark fs-6 fw-bold px-1" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="date-time" class="date fw-bold mb-3"> Date</p>
+        
+      </section>
+  
     <main class="d-flex justify-content-center">
-        <div class="d-flex flex-column align-items-center">
-          <section class="d-flex flex-column align-items-center mb-3">
-            <h1 class="mb-2 fs-3">All awesome Books</h1>
-            <ul id="book-list" class="list-unstyled border border-2 border-dark w-100">
+        <div class="d-flex flex-column align-items-center w-100">
+          <section id="section-list"class="d-flex flex-column align-items-center w-100">
+            <h1 class="mb-2 fw-bold">All awesome Books</h1>
+            <ul id="book-list" class=" book-list list-unstyled border border-2 border-dark w-100">
             </ul>
-            <span class="line"></span>
+           <!--  <span class="line"></span> -->
           </section>
-          <section class="d-flex flex-column align-items-center w-75">
+          <section id="section-add" class="d-flex flex-column align-items-center w-75 d-none">
             <h2 class="mb-2 fs-3 text-center">Add a new book</h2>
-            <form class="d-flex flex-column">
+            <form class="d-flex flex-column w-100">
                     <input   class="input mb-1 border border-2 border-dark px-1"type="text" name="title" id="book-title" placeholder="Title" />
                     <input   class="input mb-1 border border-2 border-dark px-1" type="text" name="author" id="book-author" placeholder="Author" />
                     <button type="submit" id="add-book" class="add-book bg-white border border-2 border-dark px-1" > Add</button>
                 </form>
             </section>
+
+            <section id="section-contact" class="d-none d-flex flex-column align-items-center fw-bold">
+                <h2 class="text-center fw-bold">Contact Information</h2>
+                <div class="contact-info d-flex flex-column align-items-center">
+                  <p>Do you have any questions or just want to say hello? You can reach out to us</p>
+                  <ul class="w-75">
+                    <li>Our email: habtamu.alemayehu16@gmail.com and jubaer.diu@gmail.com</li>
+                    <li>Our Phone: 01234567895 and 01731389056</li>
+                    <li>Our Address: 120 Street, 1452 House, Addis Abeba, Ethiopia and 1105 street, 105 House , Dhaka , Bangladesh</li>
+                  </ul>
+                </div>
+            </section>
         </div>
     </main>
+    <footer class="border border-2 border-dark mt-auto px-1">
+        <h2 class="fs-6 fw-bold">copyright ...</h2>
+    </footer>
     <script type="module" src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>

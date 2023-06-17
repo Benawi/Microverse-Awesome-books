@@ -55,17 +55,24 @@ The repository also contains files for setting up linters and validators.
 - Create a function to add a new book to the collection, with title and author
 - Create a function to remove a book from the collection 
 - Display all books saved in the collection in the top part of the page.
-- when a user clicks the "Add" button:
+- When a user clicks the "Add" button:
   - A new book is added to the collection.
   - The new book is displayed in the page.
-- when a user clicks the "Remove" button:
+- When a user clicks the "Remove" button:
   - The correct book is removed from the collection.
    - The correct book dissapears from the page.
 - Data is preserved in the browser's memory by using localStorage.
 - JavaScript classes used instead of objects and arrays.
 - Class methods created to add and remove books.
-- CSS styles Added to the application to make it match [this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/images/awesome_books_core_elements.png) wireframe.
-
+- A Navigation bar section added .
+- A footer section added
+- The  Navigation bar contains Three content sections:
+    - Books list.
+    - Add book form.
+    - Contact info.
+ -  CSS styles Added to the application to make it match [this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/images/awesome_books_full_website.png) wireframe.
+ - When a user clicks on any of the links, the main area changes to display only one of the three content sections which clicked.
+ - To change the contents of the page, plain JavaScript and CSS used. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,9 +153,10 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Habtamu Alemayehu 
+### 👤 Habtamu Alemayehu 
 - GitHub: [@bena](https://github.com/Benawi)
-👤 Jubaer hossain maruf
+
+### 👤 Jubaer hossain maruf
 - GitHub:[jubaer919] (https://github.com/jubaer919)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
